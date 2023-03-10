@@ -4,6 +4,7 @@
   "description": "VSCode support for EEP[1,]",
   "version": "0.0.1",
   "publisher": "hprotagonist",
+  "repository": "https://github.com/hprotagonist/eep-asm",
   "engines": {
     "vscode": "^1.74.0"
   },
