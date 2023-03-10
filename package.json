@@ -1,0 +1,36 @@
+{
+  "name": "eep-asm",
+  "displayName": "eep-asm",
+  "description": "VSCode support for EEP[1,]",
+  "version": "0.0.1",
+  "publisher": "hprotagonist",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "eep1",
+        "aliases": [
+          "eep1",
+          "eep"
+        ],
+        "extensions": [
+          ".txt",
+          ".eep"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eep1",
+        "scopeName": "source.eep1",
+        "path": "./syntaxes/eep1.tmLanguage.json"
+      }
+    ]
+  }
+}

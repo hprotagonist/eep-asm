@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "eep1",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numerics"
+		},
+		{
+			"include": "#registers"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#separators"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.jmp.eep",
+					"match": "\\b(JMP|NOOP|JEQ|JNE|JCS|JCC|JMI|JPL|JGE|JLT|JGT|JLE|JHI|JLS|JSR|RET)\\b"
+				},
+				{
+					"name": "keyword.control.alu.eep",
+					"match": "\\b(MOV|ADD|SUB|ADC|SBC|AND|CMP|LSL|LSR|ASR|XSR)\\b"
+				},
+				{
+					"name": "keyword.control.ldrstr.eep",
+					"match": "\\b(LDR|STR)\\b"
+				}
+			]
+		},
+		"numerics": {
+			"patterns": [
+				{
+					"name": "constant.numeric.eep",
+					"match": "(#?)([+-]?)(0[xbd])?([0-9A-F]{1,})\\b",
+					"captures": {
+						"1": {
+							"name": "storage.modifier.eep"
+						},
+						"2": {
+							"name": "keyword.operator.arithmetic.eep"
+						},
+						"3": {
+							"name": "storage.type.eep"
+						},
+						"4": {
+							"name": "constant.numeric.eep"
+						}
+					}
+				}
+			]
+		},
+		"registers": {
+			"patterns": [
+				{
+					"name": "variable.language.eep",
+					"match": "R[0-7]"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"match": "\/\/.*"
+				}
+			]
+		},
+		"separators": {
+			"patterns": [
+				{
+					"name": "punctuation.separator",
+					"match": ","
+				}
+			]
+		}
+	},
+	"scopeName": "source.eep1"
+}
