@@ -1,8 +1,8 @@
 {
   "name": "eep-asm",
   "displayName": "eep-asm",
-  "description": "VSCode support for EEP[1,]",
-  "version": "0.0.1",
+  "description": "VSCode Syntax Hightlighting for EEP1",
+  "version": "0.0.2",
   "publisher": "hprotagonist",
   "repository": "https://github.com/hprotagonist/eep-asm",
   "engines": {

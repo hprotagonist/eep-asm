@@ -27,7 +27,7 @@
 				},
 				{
 					"name": "keyword.control.alu.eep",
-					"match": "\\b(MOV|ADD|SUB|ADC|SBC|AND|CMP|LSL|LSR|ASR|XSR)\\b"
+					"match": "\\b(MOV|ADD|SUB|ADC|SBC|AND|CMP|LSL|LSR|ASR|XSR|EXT)\\b"
 				},
 				{
 					"name": "keyword.control.ldrstr.eep",
